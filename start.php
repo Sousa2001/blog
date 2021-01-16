@@ -1,3 +1,4 @@
+  
 <?php
     // crea el esquema
     include 'config.php';
@@ -20,4 +21,3 @@
     {
         die($e->getMessage());
     }
-    

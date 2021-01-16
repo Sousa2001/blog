@@ -2,8 +2,8 @@
     "dbconf_dev":{
         "driver":"mysql",
         "dbhost":"localhost",
-        "dbname":"proj2",
-        "dbuser":"root",
+        "dbname":"proj1",
+        "dbuser":"proj1",
         "dbpass":"linuxlinux",
         "web":"http://localhost:4040/",
         "root":"/"

@@ -12,7 +12,7 @@
 
     $db=new \PDO(DSN,USR,PWD);
     
-    $sql=file_get_contents('prouf1.sql');
+    $sql=file_get_contents('proj2.sql');
     try{
         $db->exec($sql);
     }

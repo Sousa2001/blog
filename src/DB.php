@@ -2,20 +2,20 @@
 
 namespace App;
 
-class DB extends \PDO{
-    static $instance;
-    protected  $config;
+    class DB extends \PDO{
+        static $instance;
+        protected  $config;
 
-    static function singleton(){
-        if(!(self::$instance instanceof self)){
-            self::$instance=new self();
+        static function singleton(){
+            if(!(self::$instance instanceof self)){
+                self::$instance=new self();
+            }
+            return self::$instance;
         }
-        return self::$instance;
-    }
 
-    public function __construct(){
-        parent::__construct(DSN,USR,PWD);
-    }
+        public function __construct(){
+            parent::__construct(DSN,USR,PWD);
+        }
 
 
     public function login($db, $uname, $passwd){
